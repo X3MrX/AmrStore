@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmrStore | Apps, Software & Games</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-download fa-beat"></i>
+                </div>
+                <div class="logo-text">AmrStore</div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link" data-key="home">Home</a></li>
+                <li><a href="#categories" class="nav-link" data-key="categories">Categories</a></li>
+                <li><a href="#about" class="nav-link" data-key="about">About Us</a></li>
+                <li><a href="#contact" class="nav-link" data-key="contact">Contact Us</a></li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button class="lang-switcher" id="langSwitch">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                </button>
+                <button class="theme-switcher" id="themeSwitch">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark</span>
+                </button>
+                <button class="mobile-menu" id="mobileMenu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="a-design">
+                <div class="a-glow"></div>
+                <div class="a-design-inner">
+                    <div class="a-bar-left"></div>
+                    <div class="a-bar-right"></div>
+                    <div class="a-bar-middle"></div>
+                    <div class="a-particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for apps, games, software..." data-key="searchPlaceholder">
+                <button class="btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="categories">
+        <h2 class="section-title" data-key="categoriesTitle">Download Categories</h2>
+        <div class="categories">
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="category-content">
+                    <h3 data-key="mobileApps">Mobile Applications</h3>
+                    <p data-key="mobileDesc">Download premium Android & iOS apps for productivity, social media, utilities and more.</p>
+                    <a href="#" class="btn" data-key="browseBtn">Browse Apps</a>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <div class="category-content">
+                    <h3 data-key="pcSoftware">PC Software</h3>
+                    <p data-key="pcDesc">Essential software for Windows and macOS - utilities, security, office suites and more.</p>
+                    <a href="#" class="btn" data-key="browseBtn">Browse Software</a>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="category-content">
+                    <h3 data-key="mobileGames">Mobile Games</h3>
+                    <p data-key="gamesDesc">Top-rated games for Android and iOS - action, strategy, puzzles and more.</p>
+                    <a href="#" class="btn" data-key="browseBtn">Browse Games</a>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <div class="category-content">
+                    <h3 data-key="pcGames">PC Games</h3>
+                    <p data-key="pcGamesDesc">The latest and greatest PC games - AAA titles, indie games, and classics.</p>
+                    <a href="#" class="btn" data-key="browseBtn">Browse PC Games</a>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="category-content">
+                    <h3 data-key="adobe">Adobe Software</h3>
+                    <p data-key="adobeDesc">Full suite of Adobe creative applications - Photoshop, Premiere, After Effects and more.</p>
+                    <a href="#" class="btn" data-key="browseBtn">Browse Adobe</a>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="category-content">
+                    <h3 data-key="templates">Templates</h3>
+                    <p data-key="templatesDesc">Professional templates for websites, presentations, documents and more.</p>
+                    <a href="#" class="btn" data-key="browseBtn">Browse Templates</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="section-title" data-key="aboutTitle">About Us</h2>
+            <p data-key="aboutText">We offer a reliable platform for downloading mobile apps, PC software, Adobe programs, and various games. Our mission is to provide a fast, easy, and organized experience for all users, with multi-language support and a secure download system.</p>
+            <a href="#contact" class="btn" data-key="contactBtn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title" data-key="contactTitle">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3 data-key="emailTitle">Email</h3>
+                        <p>amrkhaled9101@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h3 data-key="phoneTitle">Phone</h3>
+                        <p>+2001123394600</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3 data-key="locationTitle">Location</h3>
+                        <p data-key="locationText">Cairo, Egypt</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required data-key="namePlaceholder">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required data-key="emailPlaceholder">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required data-key="messagePlaceholder"></textarea>
+                    </div>
+                    <button type="submit" class="btn" data-key="sendBtn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3 data-key="footerAbout">About AmrStore</h3>
+                <p data-key="footerAboutText">Your trusted source for premium apps, software, games, and templates. Fast downloads and secure platform.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3 data-key="quickLinks">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home" data-key="home">Home</a></li>
+                    <li><a href="#categories" data-key="categories">Categories</a></li>
+                    <li><a href="#about" data-key="about">About Us</a></li>
+                    <li><a href="#contact" data-key="contact">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3 data-key="downloadCats">Download Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-key="mobileApps">Mobile Applications</a></li>
+                    <li><a href="#" data-key="pcSoftware">PC Software</a></li>
+                    <li><a href="#" data-key="mobileGames">Mobile Games</a></li>
+                    <li><a href="#" data-key="pcGames">PC Games</a></li>
+                    <li><a href="#" data-key="adobe">Adobe Software</a></li>
+                    <li><a href="#" data-key="templates">Templates</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 AmrStore. <span data-key="rightsText">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="style.js"></script>
+</body>
+</html>
