@@ -704,3 +704,25 @@ html[dir="rtl"] .nav-links a::after {
     left: auto;
     right: 0;
 }
+
+.blue-animate-link {
+  color: #007bff;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  animation: slightMove 2s infinite alternate;
+}
+
+.blue-animate-link:hover {
+  text-decoration: underline;
+  color: #3399ff;
+}
+
+@keyframes slightMove {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(4px);
+  }
+}
