@@ -718,11 +718,28 @@ html[dir="rtl"] .nav-links a::after {
   color: #3399ff;
 }
 
-@keyframes slightMove {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(4px);
-  }
+@keyframes professionalSwing {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(2px); }
+  40%  { transform: translateX(-2px); }
+  60%  { transform: translateX(1px); }
+  80%  { transform: translateX(-1px); }
+  100% { transform: translateX(0); }
 }
+
+.blue-animate-link {
+  color: #007bff;
+  text-decoration: none;
+  display: inline-block;
+  animation: professionalSwing 3s infinite ease-in-out;
+  transition: color 0.3s ease;
+}
+
+.blue-animate-link:hover {
+  text-decoration: underline;
+  color: #3399ff;
+}
+
+
+
+
